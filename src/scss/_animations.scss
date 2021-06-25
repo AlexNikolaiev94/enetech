@@ -1,0 +1,26 @@
+@keyframes headerHeadline {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes headerText {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes animateDivider {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 144px;
+    }
+}

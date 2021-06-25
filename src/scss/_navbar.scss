@@ -1,0 +1,33 @@
+.custom-navbar {
+    background: transparent;
+    padding-bottom: 1.5em;
+    transition: background-color 1s ease;
+
+    &.bg-blue {
+        background: $blue;
+    }
+
+    .navbar-container {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+        width: 90%;
+        .navbar-links {
+            width: 60%;
+            justify-content: flex-end;
+
+            .navbar-nav {
+                flex-direction: row;
+                width: 100%;
+                justify-content: space-between;
+
+                .nav-item {
+                    a {
+                        color: $white;
+                        &.active {
+                            border-bottom: 1px solid $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import '_palette.scss';
+@import '_text.scss';
+@import '_animations.scss';
+@import '_navbar.scss';
+@import '_headlines.scss';
+@import '_components.scss';
+@import '_form.scss';
+
+body, html {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    .bg-img {
+
+        filter: blur(3px);
+        -webkit-filter: blur(3px);
+        padding: 0;
+
+    }
+    .jumbotron {
+        &.home {
+            background: linear-gradient(
+                rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0.4)
+              ), url('/img/bg_home.png') center no-repeat;
+            background-size: cover;
+        }
+        &.investors {
+            background: linear-gradient(
+                rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0.4)
+              ), url('/img/bg_investors.png') center no-repeat;
+            background-size: cover;
+        }
+        &.solution {
+            background: linear-gradient(
+                rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0.4)
+              ), url('/img/bg_solution.png') center no-repeat;
+            background-size: cover;
+        }
+    }
+
+    .solution {
+        background: linear-gradient(180deg, #D7DBE3 -16.75%, #FFFFFF 100%);
+    }
+}
